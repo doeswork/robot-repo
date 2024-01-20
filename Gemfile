@@ -62,6 +62,12 @@ group :test do
 
 end
 
+#my gems
+
 gem "shakapacker", "= 7.2"
 
 gem "react-rails", "= 3.2"
+
+gem "httparty"
+
+gem 'view_component'
