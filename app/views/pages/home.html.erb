@@ -3,4 +3,4 @@
 
 <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
 
-<%= render(GithubExampleComponent.new(user: "markdoeswork")) %>
+<%= GithubExampleComponent.new(user: "doeswork", repo: "desk_buddy", path: "parts").repo_json %>
