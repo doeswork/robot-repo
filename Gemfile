@@ -75,3 +75,5 @@ gem "react-rails", "= 3.2"
 gem "httparty"
 
 gem 'view_component'
+
+gem "tailwindcss-rails", "~> 2.3"
