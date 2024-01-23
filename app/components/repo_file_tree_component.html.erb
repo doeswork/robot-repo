@@ -1,0 +1,17 @@
+<% repo_json.each do |item| %>
+  <div>
+  <% if item["type"] == "file" %>
+    <%= link_to item["name"], item["html_url"]%> |
+    <% item.each do |attr| %>
+    <div>
+      <%= attr %>
+    </div>
+    <% end %>
+  <% else %>
+    <%= link_to "v #{item['name']}", pages_repo_path(github_repo: @git_repo,
+                                              path: path_content(item["url"])) %>
+                                              |
+                                              <%= item["url"] %>
+  <% end %>
+  </div>
+<% end %>
