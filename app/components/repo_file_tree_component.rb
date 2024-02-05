@@ -2,7 +2,7 @@
 
 class RepoFileTreeComponent < ViewComponent::Base
 
-  def initialize(git_repo: "github.com/", path: "")
+  def initialize(git_repo: "", path: "")
     @git_repo = git_repo
     return if git_repo.nil?
     return unless git_repo.include? "github.com/"
