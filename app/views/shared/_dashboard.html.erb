@@ -2,7 +2,7 @@
 <nav class="bg-gray-800 p-4 pl-4">
    <div class="flex">
     <h2 class="font-semibold text-xl text-white" style="padding-right: 6.7rem;">Robot Repo</h2>
-    <%= render GithubUrlSearchComponent.new %>
+    <%= render Github::UrlSearchComponent.new %>
   </div>
 </nav>
 
@@ -11,7 +11,7 @@
   <!-- Side Menu -->
   <aside class="w-64 bg-gray-800 text-white p-4 min-h-screen">
     <ul class="mt-4">
-      <%= render RepoFileTreeComponent.new(git_repo: params[:github_repo], path: params[:path]) %>
+      <%= render Github::RepoTreeComponent.new(git_repo: params[:github_repo], path: params[:path]) %>
     </ul>
   </aside>
 
